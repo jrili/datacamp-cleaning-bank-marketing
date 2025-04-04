@@ -47,14 +47,10 @@ They have supplied you with a csv file called `"bank_marketing.csv"`, which you 
 | `euribor_three_months` | `float` | Euro Interbank Offered Rate (euribor) three-month rate (daily indicator) | N/A |
 
 # How to execute script:
+_(Tested in Python 3.13)_
 ```
-python datacamp-clean-bank-marketing.ipynb
+python clean-bank-marketing-data.py
 ```
-<!-- _(Tested in Python 3.13)_
-```
-python webscraping_movies.py
-```
--->
 
 _Also available with sample outputs and explanations in notebook: [datacamp-clean-bank-marketing.ipynb](https://github.com/jrili/datacamp-cleaning-bank-marketing/blob/master/datacamp-clean-bank-marketing.ipynb)_ 
 
