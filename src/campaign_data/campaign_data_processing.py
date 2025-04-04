@@ -14,6 +14,9 @@ from src.util import util
 def check_data(df: pd.DataFrame, old_df: pd.DataFrame):
     """Perform necessary checks as required for the campaign data in the specifications
     """
+    # Check number of rows
+    assert(df.shape[0] == old_df.shape[0])
+
     # Check 'client_id' column
     assert('client_id' in df.columns)
     assert(df['client_id'].dtype == int)
