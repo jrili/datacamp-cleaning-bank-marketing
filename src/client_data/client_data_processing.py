@@ -4,9 +4,6 @@ import pandas as pd
 # for numerical computations and types
 import numpy as np
 
-# for deleting the output files, if existing, before the whole ETL process is run
-import os, glob
-
 from src.util import util
 
 #################################################################################################
