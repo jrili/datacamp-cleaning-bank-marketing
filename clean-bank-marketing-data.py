@@ -1,12 +1,7 @@
 # for data frame compilation and utilities
 import pandas as pd
 
-# for numerical computations and types
-import numpy as np
-
-# for deleting the output files, if existing, before the whole ETL process is run
-import os, glob
-
+# local imports
 from src.util import util
 from src.util import constants as consts
 from src.client_data import client_data_processing as client_data
