@@ -10,6 +10,7 @@ import os, glob
 from src.util import util
 from src.util import constants as consts
 from src.client_data import client_data_processing as client_data
+from src.campaign_data import campaign_data_processing as campaign_data
 
 if __name__ == "__main__":
     # Delete output files, if existing, to start each run with a clean slate
@@ -24,3 +25,7 @@ if __name__ == "__main__":
     client_data.process_data(df, consts.PATH_TO_CLIENT_CSV_FILE)
     print("Done processing client data!\n")
     
+    # Process campaign data and store to CSV file
+    print("Processing campaign data...")
+    campaign_data.process_data(df, consts.PATH_TO_CAMPAIGN_CSV_FILE)
+    print("Done processing campaign data!\n")

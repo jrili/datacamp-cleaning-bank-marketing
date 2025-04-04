@@ -8,7 +8,6 @@ import numpy as np
 import os, glob
 
 from src.util import util
-from src.util import constants as consts
 
 #################################################################################################
 # Client data assertion checks
@@ -93,6 +92,6 @@ def process_data(from_df: pd.DataFrame, output_filename):
     check_data(clients_df, from_df)
     print("\tDone checking processed client data!\n")
 
-    print(f"\tWriting processed client data into '{consts.PATH_TO_CLIENT_CSV_FILE}'...")
+    print(f"\tWriting processed client data into '{output_filename}'...")
     clients_df.to_csv(output_filename, index=False)
-    print(f"\tDone writing client data into '{consts.PATH_TO_CLIENT_CSV_FILE}'!\n")
+    print(f"\tDone writing client data into '{output_filename}'!\n")

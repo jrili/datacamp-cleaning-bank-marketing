@@ -46,11 +46,13 @@ def map_str_to_bool_in_column(input_df: pd.DataFrame, target_column_name: str,
         - other values -> False
 
     Keyword Arguments:
+
     - input_df -- dataframe containing a string-type column `target_column_name`
     - target_column_name -- the target column name where mapping should be done
     - map_to_true_str -- string value within `target_column_name` column that should be mapped to True
 
     Return Values:
+    
     - dataframe with the `target_column_name` converted to boolean type with the specified mapping
     """
     result_df = input_df.copy()
