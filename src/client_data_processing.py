@@ -2,7 +2,7 @@
 import pandas as pd
 
 # local imports
-from src.util import util
+from . import util
 
 #################################################################################################
 # Client data assertion checks

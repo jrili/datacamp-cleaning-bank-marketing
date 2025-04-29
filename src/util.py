@@ -7,17 +7,17 @@ import numpy as np
 # for deleting the output files, if existing, before the whole ETL process is run
 import os, glob
 
-from src.util import constants as consts
+from . import config
 #################################################################################################
 # Data processing utility functions
 #################################################################################################
 
 def clear_output_files():
-    print(f"Clearing output files in '{consts.OUTPUT_DIR}'...")
-    for f in glob.glob(f"{consts.OUTPUT_DIR}/*.csv"):
+    print(f"Clearing output files in '{config.OUTPUT_DIR}'...")
+    for f in glob.glob(f"{config.OUTPUT_DIR}/*.csv"):
         print(f"\tDeleting file {os.path.basename(f)}...")
         os.remove(f)
-    print(f"Done clearing output files in '{consts.OUTPUT_DIR}'!\n")
+    print(f"Done clearing output files in '{config.OUTPUT_DIR}'!\n")
 
 def substitute_chars_in_column(input_df: pd.DataFrame, target_column_name: str,
                             subst_char: str, with_char: str) -> pd.DataFrame:
