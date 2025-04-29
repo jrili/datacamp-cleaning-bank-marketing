@@ -14,7 +14,6 @@ A CSV file `"bank_marketing.csv"` is provided, which contain data that will need
 
 # Project Objective
 * Clean messy raw data (handling missing values, incorrect types, normalize field content formats)
-* Derive new features from the given data
 * Perform tests at each stage to verify correctness of data processing
 * Export clean datasets into multiple CSV files for analytics use
 
