@@ -1,22 +1,26 @@
-# Data Cleaning Project: Bank Marketing Campaign
-_Instructions and dataset taken from Datacamp's [Cleaning Bank Marketing Campaign Data](https://app.datacamp.com/learn/projects/1613)_
+Data Cleaning Project: Bank Marketing Campaign
+=======================================
+[Python] [ETL] [Data Cleaning] [Pandas]
 
-# Links
-|     Item       |   Link   |
-| -------------- | ---------|
-|Course Link | [DataCamp: Cleaning Bank Marketing Campaign Data](https://app.datacamp.com/learn/projects/1613) |
-| Dataset | bank_marketing.csv |
-| Author's Data Engineer Portfolio | [jrili/data-engineer-portfolio](https://github.com/jrili/data-engineer-portfolio) |
+***Part of a Data Engineer Portfolio: [jrili/data-engineer-portfolio](https://github.com/jrili/data-engineer-portfolio)***
 
-# Scenario
-_(Directly taken from project instructions)_
+# Project Description
+This project focuses on extracting, cleaning, and transforming a bank marketing campaign dataset into structured, analysis-ready, and database-ready output files. It simulates a real-world ETL (Extract-Transform-Load) workflow using Python and Pandas.
 
-You have been asked to work with a bank to clean the data they collected as part of a recent marketing campaign, which aimed to get customers to take out a personal loan. They plan to conduct more marketing campaigns going forward so would like you to ensure it conforms to the specific structure and data types that they specify so that they can then use the cleaned data you provide to set up a PostgreSQL database, which will store this campaign's data and allow data from future campaigns to be easily imported. 
+A CSV file `"bank_marketing.csv"` is provided, which contain data that will need to be cleaned, reformatted, and split, saving three final csv files: `client.csv`, `campaign.csv`, and `economics.csv`.
 
-They have supplied you with a csv file called `"bank_marketing.csv"`, which you will need to clean, reformat, and split the data, saving three final csv files. Specifically, the three files should have the names and contents as outlined below:
+# Project Objective
+* Clean messy raw data (handling missing values, incorrect types, normalize field content formats)
+* Derive new features from the given data
+* Perform tests at each stage to verify correctness of data processing
+* Export clean datasets into multiple CSV files for analytics use
 
-# Project Tasks
+# Tools & Technologies Used
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 
 
+# Specifications
 ## 1. Clean client data and load to `client.csv`
 | column | data type | description | cleaning requirements |
 |--------|-----------|-------------|-----------------------|
@@ -46,6 +50,20 @@ They have supplied you with a csv file called `"bank_marketing.csv"`, which you 
 | `cons_price_idx` | `float` | Consumer price index (monthly indicator) | N/A |
 | `euribor_three_months` | `float` | Euro Interbank Offered Rate (euribor) three-month rate (daily indicator) | N/A |
 
+
+
+# Workflow Overview
+1. Extract the raw data from `bank_marketing.csv`
+2. Process the **client-related data**
+    * Extract and transform the client-related data from the raw data
+    * Load the client-related data into `client.csv`
+3. Process the **campaign-related data**
+    * Extract and transform the campaign-related data from the raw data
+    * Load the campaign-related data into `campaign.csv`
+4. Process the **economics-related data**
+    * Extract and transform the economics-related data from the raw data
+    * Load the economics-related data into `campaign.csv`
+
 # How to execute script:
 _(Tested in Python 3.13)_
 ```
@@ -54,8 +72,18 @@ python clean-bank-marketing-data.py
 
 _Also available with sample outputs and explanations in notebook: [datacamp-clean-bank-marketing.ipynb](https://github.com/jrili/datacamp-cleaning-bank-marketing/blob/master/datacamp-clean-bank-marketing.ipynb)_ 
 
+# Key Learning Points
+* Data extraction and validation using Pandas
+* Data transformation techniqeus for real-world messy datasets
+* Handling multiple output files to simulate loading into different targets
+
+# Future Improvements
+* Use test functions from noteook as basis for pytest scripts for validation
+* Schedule ETL runs using Apache Airflow
+* Load outputs directly to a relational database (PostgreSQL/MySQL)
+
 # Acknowledgements
+## Source Course
+* [DataCamp: Cleaning Bank Marketing Campaign Data](https://app.datacamp.com/learn/projects/1613)
 ## Course Instructor
 - George Boorman
-## Course Offered By
-* [DataCamp](https://app.datacamp.com/)
