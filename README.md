@@ -1,6 +1,9 @@
 Data Cleaning Project: Bank Marketing Campaign
 =======================================
-[Python] [ETL] [Data Cleaning] [Pandas]
+![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
+![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
+![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 
+[ETL]
 
 ***Part of a Data Engineer Portfolio: [jrili/data-engineer-portfolio](https://github.com/jrili/data-engineer-portfolio)***
 
@@ -16,9 +19,9 @@ A CSV file `"bank_marketing.csv"` is provided, which contain data that will need
 * Export clean datasets into multiple CSV files for analytics use
 
 # Tools & Technologies Used
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
-![Jupyter Notebook](https://img.shields.io/badge/jupyter-%23FA0F00.svg?style=for-the-badge&logo=jupyter&logoColor=white)
-![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) 
+* Python 3.13
+* Jupyter Notebook
+* Pandas
 
 # Specifications
 ## 1. Clean client data and load to `client.csv`
@@ -49,7 +52,6 @@ A CSV file `"bank_marketing.csv"` is provided, which contain data that will need
 | `client_id` | `integer` | Client ID | N/A |
 | `cons_price_idx` | `float` | Consumer price index (monthly indicator) | N/A |
 | `euribor_three_months` | `float` | Euro Interbank Offered Rate (euribor) three-month rate (daily indicator) | N/A |
-
 
 
 # Workflow Overview
