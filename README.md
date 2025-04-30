@@ -93,5 +93,5 @@ _Also available with sample outputs and explanations in notebook: [datacamp-clea
 # Acknowledgements
 ## Source Course
 * [DataCamp: Cleaning Bank Marketing Campaign Data](https://app.datacamp.com/learn/projects/1613)
-## Course Instructor
-- George Boorman
+* Course Instructor
+    * George Boorman
