@@ -12,7 +12,7 @@ This project focuses on extracting, cleaning, and transforming a bank marketing 
 
 A CSV file `"bank_marketing.csv"` is provided, which contain data that will need to be cleaned, reformatted, and split, saving three final csv files: `client.csv`, `campaign.csv`, and `economics.csv`.
 
-# Project Objective
+# Project Objectives
 * Clean messy raw data (handling missing values, incorrect types, normalize field content formats)
 * Perform tests at each stage to verify correctness of data processing
 * Export clean datasets into multiple CSV files for analytics use
@@ -66,6 +66,13 @@ A CSV file `"bank_marketing.csv"` is provided, which contain data that will need
     * Load the economics-related data into `campaign.csv`
 
 # How to execute script:
+## Prerequisites
+### Install required libraries
+```
+python -m pip install -r requirements.txt
+```
+
+## Execution Steps
 _(Tested in Python 3.13)_
 ```
 python clean-bank-marketing-data.py
@@ -75,11 +82,11 @@ _Also available with sample outputs and explanations in notebook: [datacamp-clea
 
 # Key Learning Points
 * Data extraction and validation using Pandas
-* Data transformation techniqeus for real-world messy datasets
+* Data transformation techniques for real-world messy datasets
 * Handling multiple output files to simulate loading into different targets
 
 # Future Improvements
-* Use test functions from noteook as basis for pytest scripts for validation
+* Use test functions from notebook as basis for pytest scripts for validation
 * Schedule ETL runs using Apache Airflow
 * Load outputs directly to a relational database (PostgreSQL/MySQL)
 
